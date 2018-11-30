@@ -7,7 +7,7 @@
     html = response.content
     print(html)
 
-second version:
+second version (using prettify):
 
     import bs4
     import requests
