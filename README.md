@@ -28,7 +28,7 @@ second version with documentation:
 
     #from module bs4, we import BeautifulSoup
     from bs4 import BeautifulSoup
-    #sets variable soup to results of BeautifulSoup(x, "y")
+    #sets variable soup to results of BeautifulSoup(x, "y"), x being variable defined above
     soup = BeautifulSoup(website_url, "html.parser")
     #prints results in readable manner using BeautifulSoup's .prettify() feature
     print(soup.prettify())
