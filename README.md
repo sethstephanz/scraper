@@ -9,15 +9,23 @@
 
 second version:
 
+    input = input("What URL would you like to scrape? (Make sure this website it open to scraping!) ")
+    input = str(input)
+    
     import bs4
     import requests
-    website_url = requests.get("https://en.wikipedia.org/wiki/Chess_prodigy").text
+    website_url = requests.get(input).text
 
     from bs4 import BeautifulSoup
     soup = BeautifulSoup(website_url, "html.parser")
     print(soup.prettify())
     
 second version with documentation:
+
+    #prompts user for input URL
+    input = input("What URL would you like to scrape? (Make sure this website it open to scraping!) ")
+    #stringifies input
+    input = str(input)
 
     #imports bs4 module
     import bs4
